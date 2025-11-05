@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Day, 7 Years Later...In 21 Moments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>Our Day, 7 Years Later..In 21 Moments</h1>
+            <ol class="butterflies-list">
+                <li>Morning 5 AM, sleeping next to each other. I wake up, you pull me back and force me to sleep, and then we both get wake up late.</li>
+                <li>We get dressed, I ask you to change your shirt, and then I ask “Do I look fine?” and you lie and say yes.</li>
+                <li>I make you avocado toast. You try to help but ruin something. You make coffee. We eat and then run for work.</li>
+                <li>You drop me to my office before going to yours.</li>
+                <li>We call at lunch and discuss our evening plans which somehow ends up in a fight.</li>
+                <li>You call me 5 times. I ignore all 5.</li>
+                <li>I call back. We make up like nothing happened.</li>
+                <li>I keep texting you office rants throughout the day like a live commentary.</li>
+                <li>We send each other weekend plan ideas — “Let’s go here, do this, do that.”</li>
+                <li>We end up not reaching any conclusion at all.</li>
+                <li>You finish work and come pick me up.</li>
+                <li>We get home and I have a full list of 89328 things to tell you.</li>
+                <li>I get teary about something. You hug me. We cuddle. We almost make out but then remember dinner exists.</li>
+                <li>We order food because obviously neither of us is cooking.</li>
+                <li>We go back to our cuddle session while waiting because priorities.</li>
+                <li>Food arrives — you go get it like a responsible adult.</li>
+                <li>We eat while watching something cool (NOT Big Bang Theory).</li>
+                <li>We lie next to each other after — phones in hand — doing kuch kuch.</li>
+                <li>We go down for a stroll, meet some society people, fully judge them, feel slightly envious of a few.</li>
+                <li>We think about unachievable life goals on the way back home.</li>
+                <li>I show you cat reels. You ignore them. We cuddle and spoon and fall asleep like cutiess.. 🧿</li>
+            </ol>
+        </div>
+    </div>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(12)) {
+                viewedCards.push(12);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Reasons Why We Should Get a Cat in Future</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Reasons Why We Should Get a Cat in Future</h1>
+            <p>Lowkey do we need 21 reasons......CATS dude we need to get one!!</p>
+            
+            <div class="carousel" id="photoCarousel">
+                <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide"><img src="cats/31.JPG" alt="Cat 1"></div>
+                    <div class="carousel-slide"><img src="cats/32.JPG" alt="Cat 2"></div>
+                    <div class="carousel-slide"><img src="cats/33.JPG" alt="Cat 3"></div>
+                    <div class="carousel-slide"><img src="cats/34.JPG" alt="Cat 4"></div>
+                    <div class="carousel-slide"><img src="cats/35.JPG" alt="Cat 5"></div>
+                    <div class="carousel-slide"><img src="cats/36.JPG" alt="Cat 6"></div>
+                    <div class="carousel-slide"><img src="cats/31.JPG" alt="Cat 1"></div>
+                    <div class="carousel-slide"><img src="cats/32.JPG" alt="Cat 2"></div>
+                    <div class="carousel-slide"><img src="cats/33.JPG" alt="Cat 3"></div>
+                    <div class="carousel-slide"><img src="cats/34.JPG" alt="Cat 4"></div>
+                    <div class="carousel-slide"><img src="cats/35.JPG" alt="Cat 5"></div>
+                    <div class="carousel-slide"><img src="cats/36.JPG" alt="Cat 6"></div>
+                    <div class="carousel-slide"><img src="cats/31.JPG" alt="Cat 1"></div>
+                    <div class="carousel-slide"><img src="cats/32.JPG" alt="Cat 2"></div>
+                    <div class="carousel-slide"><img src="cats/33.JPG" alt="Cat 3"></div>
+                    <div class="carousel-slide"><img src="cats/34.JPG" alt="Cat 4"></div>
+                    <div class="carousel-slide"><img src="cats/35.JPG" alt="Cat 5"></div>
+                    <div class="carousel-slide"><img src="cats/36.JPG" alt="Cat 6"></div>
+                    <div class="carousel-slide"><img src="cats/31.JPG" alt="Cat 1"></div>
+                    <div class="carousel-slide"><img src="cats/32.JPG" alt="Cat 2"></div>
+                    <div class="carousel-slide"><img src="cats/33.JPG" alt="Cat 3"></div>
+                </div>
+                <button class="carousel-btn next" aria-label="Next slide">›</button>
+            </div>
+            <div class="carousel-dots" id="photoCarouselDots"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(8)) {
+                viewedCards.push(8);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+

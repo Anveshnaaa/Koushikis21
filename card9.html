@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Positions We Should Try</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Positions We Should Try</h1>
+            <p>Ummmm.. 😏</p>
+            
+            <div class="position-button-container">
+                <button id="revealBtn" class="reveal-position-btn">LessGo</button>
+                <div id="revealMessage" class="reveal-message" style="display: none;">
+                    <p>Don't get too excited kid, let's save the hassle for later 😄</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(9)) {
+                viewedCards.push(9);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+        
+        // Button click handler
+        document.getElementById('revealBtn').addEventListener('click', function() {
+            const message = document.getElementById('revealMessage');
+            const button = this;
+            
+            if (message.style.display === 'none') {
+                message.style.display = 'block';
+                button.textContent = 'Haha, Gotcha! 😂';
+                button.style.opacity = '0.7';
+                button.style.cursor = 'default';
+            }
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Shows to Watch Other Than BBT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Shows to Watch Other Than BBT</h1>
+            
+            <ul>
+                <li>Modern Family</li>
+                <li>ShadowHunters</li>
+                <li>Shadow & Bone </li>
+                <li>Brooklyn Nine-Nine</li>
+                <li>Parks and Recreation</li>
+                <li>How I Met Your Mother</li>
+                <li>Schitt's Creek</li>
+                <li>The Good Place</li>
+                <li>New Girl</li>
+                <li>Community</li>
+                <li>Arrested Development</li>
+                <li>It's Always Sunny in Philadelphia</li>
+                <li>Superstore</li>
+                <li>30 Rock</li>
+                <li>Scrubs</li>
+                <li>That '70s Show</li>
+                <li>Two and a Half Men</li>
+                <li>Everybody Loves Raymond</li>
+                <li>Frasier</li>
+                <li>Seinfeld</li>
+                <li>Archer</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(17)) {
+                viewedCards.push(17);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+

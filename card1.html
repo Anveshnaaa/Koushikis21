@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Photos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 different versions of Cutiee..</h1>
+            <p> </p>
+            
+            <!-- 
+                OPTION 1: Using local images (recommended)
+                Create an 'images' folder in your project directory
+                Put your photos in that folder, then reference them like this:
+            -->
+            
+            <div class="carousel" id="photoCarousel">
+                <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide"><img src="images1/197dce15-8659-49bc-9fbb-3658e20e46c2.JPG" alt="197dce15-8659-49bc-9fbb-3658e20e46c2"></div>
+                    <div class="carousel-slide"><img src="images1/4fb24dea-8f2c-40ec-a2ea-6390b3886986.JPG" alt="4fb24dea-8f2c-40ec-a2ea-6390b3886986"></div>
+                    <div class="carousel-slide"><img src="images1/9e9be016-ee1a-4e22-956c-0d3d5e0f2086.JPG" alt="9e9be016-ee1a-4e22-956c-0d3d5e0f2086"></div>
+                    <div class="carousel-slide"><img src="images1/b232d461-2ab1-44b5-862a-7cee2ec398a4.JPG" alt="b232d461-2ab1-44b5-862a-7cee2ec398a4"></div>
+                    <div class="carousel-slide"><img src="images1/IMG_0336.PNG" alt="IMG_0336"></div>
+                    <div class="carousel-slide"><img src="images1/IMG_0338.PNG" alt="IMG_0338"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.29.38 AM.png" alt="Screenshot 2025-11-03 at 1.29.38 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.30.31 AM.png" alt="Screenshot 2025-11-03 at 1.30.31 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.30.49 AM.png" alt="Screenshot 2025-11-03 at 1.30.49 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.31.23 AM.png" alt="Screenshot 2025-11-03 at 1.31.23 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.31.34 AM.png" alt="Screenshot 2025-11-03 at 1.31.34 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.31.44 AM.png" alt="Screenshot 2025-11-03 at 1.31.44 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.31.53 AM.png" alt="Screenshot 2025-11-03 at 1.31.53 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.32.00 AM.png" alt="Screenshot 2025-11-03 at 1.32.00 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.32.06 AM.png" alt="Screenshot 2025-11-03 at 1.32.06 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.32.17 AM.png" alt="Screenshot 2025-11-03 at 1.32.17 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.32.27 AM.png" alt="Screenshot 2025-11-03 at 1.32.27 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.32.41 AM.png" alt="Screenshot 2025-11-03 at 1.32.41 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.32.49 AM.png" alt="Screenshot 2025-11-03 at 1.32.49 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.32.59 AM.png" alt="Screenshot 2025-11-03 at 1.32.59 AM"></div>
+                    <div class="carousel-slide"><img src="images1/Screenshot 2025-11-03 at 1.33.09 AM.png" alt="Screenshot 2025-11-03 at 1.33.09 AM"></div>
+                </div>
+                <button class="carousel-btn next" aria-label="Next slide">›</button>
+            </div>
+            <div class="carousel-dots" id="photoCarouselDots"></div>
+            
+            <!-- 
+                OPTION 2: Using online images (from URLs)
+                If your photos are hosted online, you can use their URLs:
+                
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="https://example.com/your-photo.jpg" alt="Photo 1">
+                </div>
+                <div class="photo-item">
+                    <img src="https://example.com/your-photo2.jpg" alt="Photo 2">
+                </div>
+                ... continue for all photos
+            </div>
+            -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Mark this card as viewed
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(1)) {
+                viewedCards.push(1);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Trips We Will Take Someday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Trips We Will Take Someday</h1>
+            <p>Maybe all maybe 10 maybe 5, but some of these for sure.</p>
+
+        
+            <ol class="butterflies-list">
+                <li><strong>Northern Lights (Aurora Borealis)</strong> — <em>We’ll stay up all night till we see them.</em></li>
+                <li><strong>Northern Lights (again)</strong> — <em>Because once won’t be enough.</em></li>
+                <li><strong>Northern Lights (third time’s the charm)</strong> — <em>Maybe this time we’ll see them dance pink and green.</em></li>
+                <li><strong>Masai Mara, Kenya</strong> — <em>For the wild safaris and sunsets that look unreal.</em></li>
+                <li><strong>Chandratal Lake, Himachal</strong> — <em>Frozen fingers, warm hearts, starry skies.</em></li>
+                <li><strong>Japan</strong> — <em>Cherry blossoms, ramen, and neon everything.</em></li>
+                <li><strong>Andaman Islands</strong> — <em>We’ll get you a SIM for sure!</em> 😄</li>
+                <li><strong>Warner Bros. Studio Tour London – The Making of Harry Potter</strong> — <em>Because we’re basically Hogwarts kids.</em></li>
+                <li><strong>New York City</strong> — <em>I can’t tell you — I’ve never seen anything this unbelievable. All I could think of was, I wanna revisit just to show Koushik.</em> 🗽</li>
+                <li><strong>That temple we climbed (the one with the long uphill path)</strong> — <em>We have to go back there together.</em></li>
+                <li><strong>Jamnagar, Gujarat</strong> — <em>You’ll show me around your city — every memory, every street.</em></li>
+                <li><strong>Landour (again, for sure)</strong> — <em>Because nothing beats that quiet hill and coffee smell.</em></li>
+                <li><strong>Delhi</strong> — <em>I’ll finally show you my version of Delhi — chaotic, loud, and lovable.</em></li>
+                <li><strong>Shillong</strong> — <em>Obviously. My home, my heart, and you walking its rain-soaked roads.</em></li>
+                <li><strong>Kolkata</strong> — <em>Coz I wanna roam with a full-on Bengali and feel good about it.</em> ❤️</li>
+                <li><strong>Paris</strong> — <em>Far-fetched, but heaven for romance.</em> 💫</li>
+                <li><strong>Leh–Ladakh (for sure)</strong> — <em>Bike rides, prayer flags, and the kind of silence that feels sacred.</em></li>
+                <li><strong>River Rafting in Rishikesh</strong> — <em>For the adrenaline rush and the peace that follows.</em></li>
+                <li><strong>Any beach when I come next time</strong> — <em>Doesn’t matter where, as long as it’s with you.</em> 🌊</li>
+                <li><strong>Anywhere Seedhe Maut is performing</strong> — <em>No matter the city — I just wanna scream the lyrics with you.</em> 🎤🔥</li>
+                <li><strong>And honestly…</strong> — <em>I’ll be happy if we do even a few of these. The others we can skip. Even a cute midnight stroll with you is fulfilling enough.</em> 🌙💭</li>
+            </ol>
+        </div>
+    </div>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(5)) {
+                viewedCards.push(5);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Books You Should Read</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>If you ever plan to read - 21 books you should read.</h1>
+            <ul class="book-list">
+                <li>📚 Hunger Games</li>
+                <li>📚 Harry Potter</li>
+                <li>📚 Alchemist</li>
+                <li>📚 Fourth Wing</li>
+                <li>📚 Divergent</li>
+                <li>📚 Moby Dick</li>
+                <li>📚 Da Vinci Code</li>
+                <li>📚 A Thousand Splendid Suns</li>
+                <li>📚 Krishna Key</li>
+                <li>📚 Asura</li>
+                <li>📚 Ready Player One</li>
+                <li>📚 Winter of the World</li>
+                <li>📚 Fall of the Giants</li>
+                <li>📚 Catch 22</li>
+                <li>📚 Dune</li>
+                <li>📚 Frankenstein</li>
+                <li>📚 The Great Gatsby</li>
+                <li>📚 The Sialkot Saga</li>
+                <li>📚 Outlander</li>
+                <li>📚 Animal Farm</li>
+                <li>📚 The Giver</li>
+              
+            </ul>
+        </div>
+    </div>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(20)) {
+                viewedCards.push(20);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+

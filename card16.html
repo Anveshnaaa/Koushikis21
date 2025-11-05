@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Times You Were Cringe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Times You Were Cringe</h1>
+            
+            <div class="carousel" id="photoCarousel">
+                <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide"><img src="cringe/21.png" alt="21"></div>
+                    <div class="carousel-slide"><img src="cringe/22.png" alt="22"></div>
+                    <div class="carousel-slide"><img src="cringe/23.png" alt="23"></div>
+                    <div class="carousel-slide"><img src="cringe/24.png" alt="24"></div>
+                    <div class="carousel-slide"><img src="cringe/25.png" alt="25"></div>
+                    <div class="carousel-slide"><img src="cringe/26.png" alt="26"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                    <div class="carousel-slide"><img src="cringe/27.png" alt="27"></div>
+                </div>
+                <button class="carousel-btn next" aria-label="Next slide">›</button>
+            </div>
+            <div class="carousel-dots" id="photoCarouselDots"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(16)) {
+                viewedCards.push(16);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+

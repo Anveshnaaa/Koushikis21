@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Cute Pictures of US!!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Cute Pictures of US!!</h1>
+            
+            <div class="carousel" id="photoCarousel">
+                <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+                <div class="carousel-track" id="carouselTrack18">
+                    <!-- Images will be loaded dynamically -->
+                </div>
+                <button class="carousel-btn next" aria-label="Next slide">›</button>
+            </div>
+            <div class="carousel-dots" id="photoCarouselDots"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // List of all images in images3 folder
+        const images3Files = [
+            '01.png',
+            '02.png',
+            '03.png',
+            '04.png',
+            '5.png',
+            '6.png',
+            '7.png',
+            '8.png',
+            '9.png',
+            '10.png',
+            '11.png',
+            '12.png',
+            '13.png',
+            '14.png',
+            '15.png',
+            '16.png',
+            'IMG_0361.PNG',
+            'IMG_0572.PNG',
+            'IMG_2539.JPG',
+            'IMG_7714.JPG',
+            'c02efb02-fdb8-4ffa-b1d3-0294ca4ecc5b.JPG'
+        ];
+
+        // Function to encode path properly
+        function getImagePath(filename) {
+            // Encode folder name with trailing space
+            const folder = encodeURI('images3 ') + '/';
+            // Encode spaces in filename as %20
+            const encodedFilename = filename.replace(/ /g, '%20');
+            return folder + encodedFilename;
+        }
+
+        // Load images into carousel
+        const track = document.getElementById('carouselTrack18');
+        images3Files.forEach((filename) => {
+            const slide = document.createElement('div');
+            slide.className = 'carousel-slide';
+            const img = document.createElement('img');
+            img.src = getImagePath(filename);
+            img.alt = filename;
+            slide.appendChild(img);
+            track.appendChild(slide);
+        });
+
+        // Initialize carousel after images are added
+        setTimeout(() => {
+            if (typeof initCarousels === 'function') {
+                initCarousels();
+            }
+        }, 100);
+
+        // Mark this card as viewed
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(18)) {
+                viewedCards.push(18);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+

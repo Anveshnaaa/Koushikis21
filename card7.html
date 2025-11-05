@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Movies We Should Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Movies We Should Watch</h1>
+            <p>Every time we think of a movie, add it here! 🎬</p>
+            
+            <div class="movie-add-section">
+                <div class="movie-input-wrapper">
+                    <input type="text" id="movieInput" placeholder="Enter a movie name..." maxlength="100">
+                    <button id="addMovieBtn" class="add-movie-btn">Add Movie</button>
+                </div>
+                <div class="movie-counter">
+                    <span id="movieCount">0</span> / 21 movies added
+                </div>
+            </div>
+            
+            <ol id="moviesList" class="movies-list">
+                <!-- Movies will be added here dynamically -->
+            </ol>
+        </div>
+    </div>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(7)) {
+                viewedCards.push(7);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+        
+        // Movie management
+        const MOVIES_KEY = 'moviesList';
+        
+        function getMovies() {
+            const stored = localStorage.getItem(MOVIES_KEY);
+            return stored ? JSON.parse(stored) : [];
+        }
+        
+        function saveMovies(movies) {
+            localStorage.setItem(MOVIES_KEY, JSON.stringify(movies));
+        }
+        
+        function renderMovies() {
+            const movies = getMovies();
+            const list = document.getElementById('moviesList');
+            const counter = document.getElementById('movieCount');
+            
+            list.innerHTML = '';
+            counter.textContent = movies.length;
+            
+            movies.forEach((movie, index) => {
+                const li = document.createElement('li');
+                li.className = 'movie-item';
+                li.innerHTML = `
+                    <span class="movie-name">${escapeHtml(movie)}</span>
+                    <button class="remove-movie-btn" data-index="${index}" aria-label="Remove movie">×</button>
+                `;
+                list.appendChild(li);
+            });
+            
+            // Add event listeners to remove buttons
+            document.querySelectorAll('.remove-movie-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const index = parseInt(this.getAttribute('data-index'));
+                    const movies = getMovies();
+                    movies.splice(index, 1);
+                    saveMovies(movies);
+                    renderMovies();
+                });
+            });
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function addMovie() {
+            const input = document.getElementById('movieInput');
+            const movieName = input.value.trim();
+            
+            if (!movieName) {
+                input.focus();
+                return;
+            }
+            
+            const movies = getMovies();
+            if (movies.length >= 21) {
+                alert('You\'ve reached the maximum of 21 movies!');
+                return;
+            }
+            
+            if (movies.includes(movieName)) {
+                alert('This movie is already in the list!');
+                return;
+            }
+            
+            movies.push(movieName);
+            saveMovies(movies);
+            renderMovies();
+            
+            input.value = '';
+            input.focus();
+        }
+        
+        // Event listeners
+        document.getElementById('addMovieBtn').addEventListener('click', addMovie);
+        document.getElementById('movieInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                addMovie();
+            }
+        });
+        
+        // Initialize
+        renderMovies();
+    </script>
+</body>
+</html>
+

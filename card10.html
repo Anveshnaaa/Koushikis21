@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Guys i have been with!!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Guys i have been with!!</h1>
+            
+            <ul>
+                <li>Ramesh</li>
+                <li>Suresh</li>
+                <li>Mahesh</li>
+                <li>Ganesh</li>
+                <li>Haresh</li>
+                <li>Dinesh</li>
+                <li>Naresh</li>
+                <li>Rakesh</li>
+                <li>Mukesh</li>
+                <li>Prathamesh</li>
+                <li>Yogesh</li>
+                <li>Brijesh</li>
+                <li>Paresh</li>
+                <li>Jitesh</li>
+                <li>Nitesh</li>
+                <li>Hitesh</li>
+                <li>Kartik</li>
+                <li>Pratik</li>
+                <li>Rohit</li>
+                <li>Mohit</li>
+                <li>Prakash
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(10)) {
+                viewedCards.push(10);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+

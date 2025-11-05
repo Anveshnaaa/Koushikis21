@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Food Dates </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Food Dates</h1>
+            <p>Added a quiz kinda something too! LOL</p>
+
+            <div class="quiz-layout">
+                <div>
+                    <div class="carousel" id="foodCarousel">
+                        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><img src="images2/4DD0C745-8248-4FBE-AECF-D9421C9F6E6C.JPG" alt="Food 1"></div>
+                            <div class="carousel-slide"><img src="images2/IMG_0339.PNG" alt="Food 2"></div>
+                            <div class="carousel-slide"><img src="images2/IMG_0340.PNG" alt="Food 3"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.38.28 AM.png" alt="Food 4"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.38.36 AM.png" alt="Food 5"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.38.46 AM.png" alt="Food 6"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.38.57 AM.png" alt="Food 7"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.39.04 AM.png" alt="Food 8"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.39.12 AM.png" alt="Food 9"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.39.20 AM.png" alt="Food 10"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.39.29 AM.png" alt="Food 11"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.39.36 AM.png" alt="Food 12"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.39.47 AM.png" alt="Food 13"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.39.57 AM.png" alt="Food 14"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.40.19 AM.png" alt="Food 15"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.40.45 AM.png" alt="Food 16"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.40.56 AM.png" alt="Food 17"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.41.03 AM.png" alt="Food 18"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.41.11 AM.png" alt="Food 19"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.41.24 AM.png" alt="Food 20"></div>
+                            <div class="carousel-slide"><img src="images2/Screenshot 2025-11-03 at 2.41.46 AM.png" alt="Food 21"></div>
+                        </div>
+                        <button class="carousel-btn next" aria-label="Next slide">›</button>
+                    </div>
+                    <div class="carousel-dots" id="foodCarouselDots"></div>
+                </div>
+                <div class="mcq-panel">
+                    <div class="scoreboard">Score: <span id="mcqScore">0</span></div>
+                    <h2>Quick MCQs</h2>
+
+                    <!-- 1 -->
+                    <div class="mcq" data-question="1" data-for="0">
+                        <div class="mcq-question">Do you love me?</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">Yes</button>
+                            <button class="option-button" data-correct="true">Of course</button>
+                            <button class="option-button" data-correct="true">Duh</button>
+                            <button class="option-button" data-correct="true">Absolutely</button>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="mcq" data-question="2" data-for="1">
+                        <div class="mcq-question">Where was this?</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="false">KFC</button>
+                            <button class="option-button" data-correct="false">Domino's</button>
+                            <button class="option-button" data-correct="true">McDonald's</button>
+                            <button class="option-button" data-correct="false">Don't know, don't care</button>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="mcq" data-question="3" data-for="2">
+                        <div class="mcq-question">Where was this?</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="false">Manali</button>
+                            <button class="option-button" data-correct="false">Chandigarh</button>
+                            <button class="option-button" data-correct="false">Kasauli</button>
+                            <button class="option-button" data-correct="true">Mussoorie</button>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="mcq" data-question="4" data-for="3">
+                        <div class="mcq-question">Pick one</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">34th August</button>
+                            <button class="option-button" data-correct="false">5 Authors</button>
+                            <button class="option-button" data-correct="false">Peddlers</button>
+                            <button class="option-button" data-correct="false">Don't know, don't care</button>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="mcq" data-question="5" data-for="4">
+                        <div class="mcq-question">Who’s cuter?</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">Me</button>
+                            <button class="option-button" data-correct="false">You</button>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="mcq" data-question="6" data-for="5">
+                        <div class="mcq-question">Who ate more this day?</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">Me</button>
+                            <button class="option-button" data-correct="false">You</button>
+                        </div>
+                    </div>
+
+                    <!-- 7 (type-in) -->
+                    <div class="mcq" data-question="7" data-for="6" data-answer="nuqi">
+                        <div class="mcq-question">Where is this? (type your answer)</div>
+                        <div class="mcq-options">
+                            <input type="text" class="option-input" placeholder="Type here">
+                            <button class="option-button">Submit</button>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="mcq" data-question="8" data-for="7">
+                        <div class="mcq-question">Pick one</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="false">34th August</button>
+                            <button class="option-button" data-correct="true">The Keeper</button>
+                            <button class="option-button" data-correct="false">Peddlers</button>
+                            <button class="option-button" data-correct="false">Don't know, don't care</button>
+                        </div>
+                    </div>
+
+                    <!-- 9 (type-in) -->
+                    <div class="mcq" data-question="9" data-for="8" data-answer="sosoru">
+                        <div class="mcq-question">Enter the secret word</div>
+                        <div class="mcq-options">
+                            <input type="text" class="option-input" placeholder="Type here">
+                            <button class="option-button">Submit</button>
+                        </div>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="mcq" data-question="10" data-for="9">
+                        <div class="mcq-question">Where was this?</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="false">Kasali</button>
+                            <button class="option-button" data-correct="false">Manali</button>
+                            <button class="option-button" data-correct="false">Chandigarh</button>
+                            <button class="option-button" data-correct="true">Landour</button>
+                        </div>
+                    </div>
+
+                    <!-- 11 -->
+                    <div class="mcq" data-question="11" data-for="10">
+                        <div class="mcq-question">Pick one</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">34th August</button>
+                            <button class="option-button" data-correct="false">Peddlers</button>
+                            <button class="option-button" data-correct="false">5 Authors</button>
+                            <button class="option-button" data-correct="false">34th October</button>
+                        </div>
+                    </div>
+
+                    <!-- 12 (no quiz) -->
+                    <div class="mcq no-quiz" data-question="12" data-for="11">
+                        <div class="mcq-question">Oh my god, you’re so handsome. (no quiz)</div>
+                    </div>
+
+                    <!-- 13 -->
+                    <div class="mcq" data-question="13" data-for="12">
+                        <div class="mcq-question">We were so high that day. LOL.</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">Live in option 1</button>
+                            <button class="option-button" data-correct="false">Live in option 2</button>
+                            <button class="option-button" data-correct="false">Live in option 3</button>
+                        </div>
+                    </div>
+
+                    <!-- 14 -->
+                    <div class="mcq" data-question="14" data-for="13">
+                        <div class="mcq-question">Choose one</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">Live in option 1</button>
+                            <button class="option-button" data-correct="false">Live in option 2</button>
+                            <button class="option-button" data-correct="false">Live in option 3</button>
+                        </div>
+                    </div>
+
+                    <!-- 15 -->
+                    <div class="mcq" data-question="15" data-for="14">
+                        <div class="mcq-question">Pick one</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">Live in option 1</button>
+                            <button class="option-button" data-correct="false">Live in option 2</button>
+                            <button class="option-button" data-correct="false">Live in option 3</button>
+                        </div>
+                    </div>
+
+                    <!-- 16 -->
+                    <div class="mcq" data-question="16" data-for="15">
+                        <div class="mcq-question">Pick one</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">5 Authors</button>
+                            <button class="option-button" data-correct="false">Peddlers</button>
+                            <button class="option-button" data-correct="false">Somewhere in Jalandhar</button>
+                            <button class="option-button" data-correct="false">Don't know, don't care</button>
+                        </div>
+                    </div>
+
+                    <!-- 17 -->
+                    <div class="mcq" data-question="17" data-for="16">
+                        <div class="mcq-question">Pick one</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">Uni Mall</button>
+                            <button class="option-button" data-correct="false">Somewhere in Jalandhar</button>
+                            <button class="option-button" data-correct="false">Retro Café in Jalandhar</button>
+                        </div>
+                    </div>
+
+                    <!-- 18 (no quiz, just text) -->
+                    <div class="mcq no-quiz" data-question="18" data-for="17">
+                        <div class="mcq-question">Retro Café in Jalandhar</div>
+                    </div>
+
+                    <!-- 19 -->
+                    <div class="mcq" data-question="19" data-for="18">
+                        <div class="mcq-question">Pick one</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="false">5 Authors</button>
+                            <button class="option-button" data-correct="false">Uni Mall</button>
+                            <button class="option-button" data-correct="true">34th August</button>
+                            <button class="option-button" data-correct="false">34th November</button>
+                        </div>
+                    </div>
+
+                    <!-- 20 -->
+                    <div class="mcq" data-question="20" data-for="19">
+                        <div class="mcq-question">Pick one</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">Uni Mall</button>
+                            <button class="option-button" data-correct="false">34th August</button>
+                            <button class="option-button" data-correct="false">34th October</button>
+                            <button class="option-button" data-correct="false">Don't know, don't care</button>
+                        </div>
+                    </div>
+
+                    <!-- 21 -->
+                    <div class="mcq" data-question="21" data-for="20">
+                        <div class="mcq-question">Where was this?</div>
+                        <div class="mcq-options">
+                            <button class="option-button" data-correct="true">Chandigarh</button>
+                            <button class="option-button" data-correct="false">Manali</button>
+                            <button class="option-button" data-correct="false">Kasauli</button>
+                            <button class="option-button" data-correct="false">Jalandhar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(2)) {
+                viewedCards.push(2);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+
+        // MCQ Interactions
+        (function initMcqs(){
+            let score = 0;
+            const scoreEl = document.getElementById('mcqScore');
+            document.querySelectorAll('.mcq').forEach((mcq) => {
+                const input = mcq.querySelector('.option-input');
+                const submitBtn = input ? mcq.querySelector('.option-button') : null;
+                const buttons = input ? [] : mcq.querySelectorAll('.option-button');
+
+                if (submitBtn && input) {
+                    const normalize = (s) => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, '').trim();
+                    const submit = () => {
+                        if (submitBtn.classList.contains('disabled')) return;
+                        const answer = normalize(mcq.getAttribute('data-answer'));
+                        const typed = normalize(input.value);
+                        submitBtn.classList.add('disabled');
+                        if (typed && answer && typed === answer) { submitBtn.classList.add('correct'); score++; }
+                        else { submitBtn.classList.add('wrong'); }
+                        if (scoreEl) scoreEl.textContent = String(score);
+                    };
+                    submitBtn.addEventListener('click', submit);
+                    input.addEventListener('keydown', (e) => { if (e.key === 'Enter') submit(); });
+                } else {
+                    buttons.forEach((btn) => {
+                        btn.addEventListener('click', () => {
+                            if (btn.classList.contains('disabled')) return;
+                            const correct = btn.getAttribute('data-correct') === 'true';
+                            buttons.forEach(b => b.classList.add('disabled'));
+                            if (correct) { btn.classList.add('correct'); score++; }
+                            else { btn.classList.add('wrong'); const c = Array.from(buttons).find(b=>b.getAttribute('data-correct')==='true'); c?.classList.add('correct'); }
+                            if (scoreEl) scoreEl.textContent = String(score);
+                        });
+                    });
+                }
+            });
+
+            // Show only MCQ matching the current slide
+            function showMcqFor(index){
+                document.querySelectorAll('.mcq').forEach(mcq => {
+                    const forIdx = Number(mcq.getAttribute('data-for'));
+                    mcq.style.display = forIdx === index ? 'block' : 'none';
+                });
+            }
+            showMcqFor(0);
+            document.addEventListener('carouselChange', (e) => {
+                if (e.detail?.id === 'foodCarousel') {
+                    showMcqFor(e.detail.index);
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
+

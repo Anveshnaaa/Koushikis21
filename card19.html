@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Things We Have Experienced Together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-detail-page">
+        <div class="card-content">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1>21 Experiences we have had Together</h1>
+            <ul>
+                <li>❤️ Got hit by a truck and reached home safe.</li>
+                <li>❤️ Experienced live-in as teenagers.</li>
+                <li>❤️ Survived a year of long distance.</li>
+                <li>❤️ A crazy idk sleeper train ride where you bribed the guy.</li>
+                <li>❤️ Coming to each other's hostels.</li>
+                <li>❤️ Riding in the wrong direction for idk how many kilometers.</li>
+                <li>❤️ All the hostel leaves we applied to see each other.</li>
+                <li>❤️ 2 am calls and 4 am breakups.</li>
+                <li>❤️ The experience of that one scary false negative.</li>
+                <li>❤️ Done grocery shopping together.</li>
+                <li>❤️ Had a cat for a night.</li>
+                <li>❤️ Had dinner date at home.</li>
+                <li>❤️ Danced together.</li>
+                <li>❤️ Survived multiple LPU guards.</li>
+                <li>❤️ Our stupid badminton learning lessons.</li>
+                <li>❤️ Seen each other sick.</li>
+                <li>❤️ Finished 'n' number of tissue boxes.</li>
+                <li>❤️ Survived a day without electricity.</li>
+                <li>❤️ Prayed and visted temples together.</li>
+                <li>❤️ Had a fancy ring shopping experience.</li>
+            
+            </ul>
+        </div>
+    </div>
+    <script>
+        (function() {
+            const viewed = localStorage.getItem('viewedCards');
+            const viewedCards = viewed ? JSON.parse(viewed) : [];
+            if (!viewedCards.includes(19)) {
+                viewedCards.push(19);
+                localStorage.setItem('viewedCards', JSON.stringify(viewedCards));
+            }
+        })();
+    </script>
+</body>
+</html>
+
